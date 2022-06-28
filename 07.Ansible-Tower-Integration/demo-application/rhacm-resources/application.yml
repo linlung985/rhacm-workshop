@@ -6,7 +6,7 @@ metadata:
   namespace: mariadb
 spec:
   type: Git
-  pathname: https://github.com/michaelkotelnikov/rhacm-workshop.git
+  pathname: https://github.com/linlung985/rhacm-workshop.git
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
