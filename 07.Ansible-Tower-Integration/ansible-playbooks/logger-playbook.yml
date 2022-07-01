@@ -1,4 +1,5 @@
 ---
-- hosts: localhost
-  roles:
+#- hosts: localhost
+- hosts: ansibletower
+roles:
     - logger
