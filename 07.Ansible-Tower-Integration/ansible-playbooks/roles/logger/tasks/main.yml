@@ -1,10 +1,10 @@
 ---
-- name: Create log file directory
+#- name: Create log file directory
 #  file:
 #    path: "{{ log_file_path }}"
 #    state: directory
-  shell:
-    mkdir var/www/html/logs
+#  shell:
+#    mkdir var/www/html/logs
 - name: Validate the log file
   stat:
     path: "{{ log_file_path }}/{{ log_file_name }}"
