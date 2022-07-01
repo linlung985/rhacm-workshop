@@ -1,4 +1,5 @@
 ---
 - hosts: ansibletower
+  gather_facts: no
   roles:
     - logger
