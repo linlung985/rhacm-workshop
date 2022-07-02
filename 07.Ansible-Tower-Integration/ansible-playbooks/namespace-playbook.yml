@@ -1,4 +1,4 @@
 ---
-- hosts: ansibletower
+- hosts: localhost
   roles:
     - k8s-namespace
