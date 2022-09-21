@@ -16,7 +16,7 @@ spec:
     spec:
       project: demo-project-argocd
       source:
-        repoURL: https://github.com/michaelkotelnikov/rhacm-workshop.git
+        repoURL: https://github.com/linlung985/rhacm-workshop.git
         targetRevision: master
         path: 04.Application-Lifecycle/exercise-argocd/application-resources/
         helm:
