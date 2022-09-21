@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
   application.html: |
-    {{ .Values.application.content }}
+    {{ .Values.application.content2 }}
 kind: ConfigMap
 metadata:
   name: application-prod
