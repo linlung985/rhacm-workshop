@@ -1,4 +1,4 @@
 application:
   content: "<h1>Development Application</h1>"
-  content2: "<h1>Development Application</h1>"
+  content2: "<h1>Development Application2</h1>"
 namespace: webserver-dev
