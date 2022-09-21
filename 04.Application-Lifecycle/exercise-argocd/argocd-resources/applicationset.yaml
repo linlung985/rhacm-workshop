@@ -21,7 +21,7 @@ spec:
         path: 04.Application-Lifecycle/exercise-argocd/application-resources/
         helm:
           valueFiles:
-          - 'values/{{path.basename}}/values.yaml'
+          - 'values/{{path.basename}}/values2.yaml'
       destination:
         name: 'local-cluster'
       syncPolicy:
