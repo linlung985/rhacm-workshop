@@ -2,11 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: webserver
-  namespace: openshift-gitops
+#  namespace: openshift-gitops
+  namespace: openshift-operators
 spec:
   generators:
   - git:
-      repoURL: https://github.com/michaelkotelnikov/rhacm-workshop.git
+      repoURL: https://github.com/linlung985/rhacm-workshop.git
       revision: master
       directories:
       - path: 04.Application-Lifecycle/exercise-argocd/application-resources/values/*
@@ -21,7 +22,7 @@ spec:
         path: 04.Application-Lifecycle/exercise-argocd/application-resources/
         helm:
           valueFiles:
-          - 'values/{{path.basename}}/values2.yaml'
+          - 'values/{{path.basename}}/values.yaml'
       destination:
         name: 'local-cluster'
       syncPolicy:
